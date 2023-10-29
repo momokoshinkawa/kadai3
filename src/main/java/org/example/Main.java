@@ -11,12 +11,15 @@ public class Main {
         studentScores.put("鈴木", 870);
         studentScores.put("佐藤", 710);
 
+        int suzukiScore = studentScores.get("鈴木");
+        System.out.println("鈴木のTOEICスコア:" + suzukiScore);
+
         try {
             String name = "新川";
             int score = studentScores.get(name);
             System.out.println(name + "のTOEICスコア:" + score);
         } catch (Exception e) {
-            System.out.println("Error！");
+            System.out.println("Not found");
         }
     }
 }
